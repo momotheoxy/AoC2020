@@ -36,7 +36,6 @@ class No7_1
 						{
 							if (bags.get(j).currentColour.equals(childBagColour))
 							{
-							//	System.out.println("yes "+bags.get(j).currentColour);
 								aBag.numbers.add(childNumber);
 								aBag.childBags.add(bags.get(j));
 								bags.get(j).parentBags.add(aBag);
@@ -74,12 +73,10 @@ class No7_1
 					{
 						if (bags.get(j).currentColour.equals(childBagColour))
 						{
-						//	System.out.println("yes "+bags.get(j).currentColour);
 							currentBag.numbers.add(childNumber);
 							currentBag.childBags.add(bags.get(j));
 							bags.get(j).parentBags.add(currentBag);
 							isChildFound = true;
-							//break;
 						}
 					}
 
@@ -96,23 +93,11 @@ class No7_1
 			}	
 		}
 
-	/*	for (Day7Bags aBag : bags) 
-		{
-			System.out.print(aBag.currentColour + " has ");
-
-			for (Day7Bags child : aBag.childBags)
-			{
-				System.out.print(child.currentColour + ", ");
-			}
-			System.out.println();
-		}
-	*/	
 		for (Day7Bags aBag : bags) 
 		{
 			if (aBag.currentColour.equals("shiny gold"))
 			{
 				aBag.print(0);
-				//System.out.println(aBag.countParent());
 			}
 		}
     }

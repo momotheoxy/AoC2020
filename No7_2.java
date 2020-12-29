@@ -94,25 +94,12 @@ class No7_2
 				bags.add(currentBag);
 			}	
 		}
-
-		/*for (Day7Bags aBag : bags) 
-		{
-			System.out.print(aBag.currentColour + " has ");
-
-			for (int i = 0; i < aBag.childBags.size(); i++)
-       		{
-				System.out.print(aBag.numbers.get(i).intValue() + " " + aBag.childBags.get(i).currentColour + ", ");
-			}
-			System.out.println();
-		}*/
 	
 		for (Day7Bags aBag : bags) 
 		{
 			if (aBag.currentColour.equals("shiny gold"))
 			{
-				//aBag.print(0);
 				System.out.println(aBag.countChild());
-				//System.out.println(aBag.countParent());
 			}
 		}
     }

@@ -25,10 +25,6 @@ public class Day7Bags
 
     public void print(int level)
     {
-        /*for (int i = 1; i <= level; i++)
-        {
-            System.out.print("*");
-        }*/
         System.out.println(currentColour);
 
         for (Day7Bags day7Bags : parentBags) 

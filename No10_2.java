@@ -31,11 +31,6 @@ class No10_2
 
 		for (int i = 1; i < joltsArray.length; i++)
 		{
-			/*for (int j = 1; j <= 3 && i + j < joltsArray.length ; j++)
-			{
-				if (joltsArray[i + j] - joltsArray[i] <= 3) count++;
-			}*/
-			//totalSetCount += count;
 			if (joltsArray[i] - joltsArray[i - 1] == 1)
 			{
 				count++;
